@@ -9,7 +9,8 @@
 <body>
 
     <h3 id="wel"></h3>
-  <button onmouseover="greeting()">Show greeting</button>
+    <p id="sum"></p>
+  <button onmouseover="greeting('Ibrahim')">Show greeting</button>
     <script>
        // syntax
         /*
@@ -18,15 +19,36 @@
           }
 
         */
-
-        function greeting(){
-            let name ="Sunday Omolewu"
-         let el= document.getElementById('wel')
-           el.innerHTML="Welcome to OIC Hub " + name
+        function sum(a, b, c, x){
+          console.log(c, x)
+          document.getElementById('sum').innerHTML=a+b
         }
 
+        function greeting(name){
+            
+         let el= document.getElementById('wel')
+           el.innerHTML="Welcome to OIC Hub " + div(10,5)
+        }
+
+        // function sum(){
+        //   let a =2;
+        //   let b =45;
+        //   console.log(a+b)
+        // }
+        //  sum()
+
+       sum(4545667, 78, 23, 78)
+       
+      function multi(a=0,b=0){
+        document.getElementById('sum').innerHTML=a*b
+      }
+      multi()
     //    greeting()
 
+   function div(a,b){
+       return      
+   }
+ console.log( div(10,5))
     </script>
 </body>
 </html>
