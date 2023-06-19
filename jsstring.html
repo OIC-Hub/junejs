@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+     <p>Email <span id="email"></span></p>
+
+    <script>
+
+        let firstName="Sunday";
+        let email ="omolewu12@gmail.com";
+        // let qoute = 
+        // '"If you don\'t have a' +   
+        //  'goal \n you are not better than a goat"'
+        let qoute = `"If you 
+        don't have a 
+        goal \n you are not 
+        better
+         than a goat"`
+        let greeting = `${qoute}  <br> Welcome to our official site, ${firstName} `
+      console.log(qoute)   
+        // let email = new String("omolewu12@gmail.com");
+        document.getElementById('email').innerHTML=greeting
+
+    let name= "Sunday Omolewu omolewu12@gmail.com"
+//slice(start, end)
+    // console.log(name[7])
+    // console.log(name.length)
+// let newName=name.slice(1)
+// let newName=name.slice(0, name.length -1) 
+//  console.log(name.slice(0, -1))
+console.log(name.slice(-10))
+
+
+//substr()
+
+let newName=name.substr(0, 10) 
+ console.log(newName)
+    </script>
+</body>
+</html>
