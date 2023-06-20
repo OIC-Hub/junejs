@@ -25,7 +25,7 @@
         // let email = new String("omolewu12@gmail.com");
         document.getElementById('email').innerHTML=greeting
 
-    let name= "Sunday Omolewu omolewu12@gmail.com"
+    let name= "Sunday Omolewu"
 //slice(start, end)
     // console.log(name[7])
     // console.log(name.length)
@@ -35,10 +35,60 @@
 console.log(name.slice(-10))
 
 
-//substr()
+//substr(startingIndex, length)
 
-let newName=name.substr(0, 10) 
+let newName=name.substr(7, 4) 
  console.log(newName)
-    </script>
+
+ // subString(startingIndex, EndingIndex)
+ let phone="0810251992"
+console.log(phone.substring(2, 4))
+//indexof()
+let myemail="omolewu12.Sunday@gmail.com"
+    console.log(myemail.indexOf('.', 23))
+console.log(phone.indexOf('08'))
+ console.log(myemail.lastIndexOf('.'))
+
+ let comment= "A long time ago in a country far away from Nigeria...."
+
+//    console.log(comment.search('long'))
+console.log(comment.search(/Long/i)) 
+
+    // console.log(comment.match(/a/ig))
+    console.log(comment.matchAll(/a/ig))
+
+//includes
+console.log(phone.includes('081'))
+if(phone.includes('081') || phone.includes('090') || phone.includes('070')){
+   if(phone.length == 11){
+    console.log('valid number')
+   }else{
+    console.log('invalid number')
+   }
+}else{
+    console.log('invalid number')
+}
+
+//carAt
+console.log(comment.charAt(2))
+
+//startWith()
+if(phone.startsWith('081') || phone.startsWith('090') || phone.startsWith('070')){
+   if(phone.length == 11){
+    console.log('valid number')
+   }else{
+    console.log('invalid number')
+   }
+}else{
+    console.log('invalid number')
+}
+
+let tv='LG Plastma'
+console.log(tv.endsWith('obo'))
+
+// console.log("      Sunday     ".trim())
+// console.log("      Sunday     ".trimStart())
+console.log("      Sunday     ".trimEnd())
+</script>
 </body>
 </html>
