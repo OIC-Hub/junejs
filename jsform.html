@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Basic Javascript Form</title>
+</head>
+<body>
+
+    <div class="container mt-4">
+<div class="row">
+<div class="col-md-4">
+    <form  name="form" id="registration">
+        <div>
+            Name <br/>
+            <input type="text" name="name" >
+            <p id="nameErr" style="color:red"></p>
+        </div>
+        <div>
+            Phone Number <br/>
+            <input type="text"  name="phone" >
+            <p id="phoneErr" style="color:red"></p>
+        </div>
+        <div>
+            Email <br/>
+            <input type="text" name="email" >
+            <p id="emailErr" style="color:red"></p>
+        </div>
+        <input type="submit"  value="Register" class="btn btn-primary mt-3">
+     </form>
+  </div>
+     <div class="col-md-4 offset-md-1">
+     
+        Welcome to our site your name is <span id="name"></span>, your email is <span id="email"></span>
+        And your phone number is <span id="phone"></span>
+
+     </div>
+    </div>
+</div>
+
+<script src="form.js"></script>
+</body>
+</html>
