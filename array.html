@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array class</title>
+</head>
+<body>
+    <script>
+        const nums=[12, 34, 67, 89, true, [23, 45,67], {name:'Sunday', age: 12}];
+        console.log(nums[5][1])
+        console.log(nums);
+      console.log(nums[2])
+      const  names= ['Sunday', 'Ibrahim', 'Sulaimon'];
+         names[1] ='Istreal'
+     console.log(names[1])
+     console.log(names[2])
+      console.log(names)
+
+    //  const  users = new Array('Ade', 'Oba', 'Oloye')
+    //  console.log(users[1])
+
+    const users=[];
+      users[0] ='Opeyemi'
+      users[1]=true
+      users[2]=null
+      users[3]=[12, 45,89, 0]
+    console.log(users)
+
+    //Array methods
+       // pop()
+    let numbers=[1, 2, 3, 4, 5, 6, 7, 8]
+    numbers.pop()
+ console.log(numbers.pop())
+ console.log(numbers)
+ // push()
+ numbers.push(12, 67, 89)
+ numbers.push([12, 12, 78])
+ console.log(numbers)
+ numbers.pop()
+ console.log(numbers)
+
+ // shift()
+
+ numbers.shift()
+ console.log(numbers)
+
+ //unshift()
+
+ numbers.unshift(0, 67)
+ console.log(numbers)
+
+ // slice(startingIndex, EndingIndex)
+
+ console.log(numbers.slice(2, 8))
+
+ // splice(startingIndex, deleteNumbers, insertion)
+  let towns=['Iseyin', 'Osogbo', 'Ilobu', 'Ife', 'Ikirun'];
+ towns.splice(2, 0, 'Okeho', 'Ijabe', 'Okuku')
+ towns.splice(2, 2, 'Okeho', 'Ijabe', 'Okuku')
+ console.log(towns)
+console.log(towns.includes('Iseyin'))
+</script>
+</body>
+</html> 
